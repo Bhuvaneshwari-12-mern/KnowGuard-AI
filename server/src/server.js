@@ -55,7 +55,7 @@ async function startServer() {
     console.log('✅ Database connected successfully.');
     
     // Sync database (This will create the Projects table)
-    await sequelize.sync({ alter: true });
+    //await sequelize.sync({ alter: true });
     console.log('✅ Database tables synced.');
 
     app.listen(PORT, () => {
